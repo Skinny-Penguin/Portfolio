@@ -1,0 +1,80 @@
+*{
+    margin: 0;  
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #FF5841;
+    color: #ffffff;
+}
+nav{
+    cursor:alias; /*Will need to change this*/
+    margin: 50px 56px 50px 56px;
+    padding: 0px 1em 0px 1em;
+    display: flex;
+    gap: 60%;
+}
+.navkonam{
+    text-emphasis: initial;
+    font-size: x-large;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+nav ul li a {
+    width: 30%;
+    text-decoration: none ;
+    border-bottom: 2px solid black;
+    /* border-bottom: 2px  solid rgb(255, 255, 255) ; */
+    
+   
+} 
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+     width: 2%;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.nam {
+    font-family: "Playwrite DE SAS", cursive;
+ 
+}
+
+
+
+/* 
+nav {
+    background-color: lightgreen;
+    width: 100%;
+    height:40px;
+ 
+    display: flex;
+    color: aqua;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    color: aqua;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 39px;
+
+}
+ul li{
+    color: rgb(255, 255, 255);
+
+}
+a{
+    color: aqua;
+    text-decoration: none;
+}
+
+#home{
+    color: aqua;
+} */
