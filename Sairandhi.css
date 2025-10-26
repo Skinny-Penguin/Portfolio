@@ -2,17 +2,30 @@
     margin: 0;  
     padding: 0;
     font-family: sans-serif;
-    background-color: #FF5841;
-    color: #ffffff;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
 }
+:root{
+    --primary-color: rgb(120, 0, 0);
+    --secondary-color: rgb(253, 240, 213);
+    --hover-color: rgb(193, 18, 31);
+    --dark-color: rgb(0, 48, 73);
+    /* --lighter-color: rgb(102, 155, 188); */
+    --lighter-color: yellow;
+}
+
+
 nav{
-    cursor:alias; /*Will need to change this*/
-    margin: 50px 56px 50px 56px;
-    padding: 0px 1em 0px 1em;
+    background-color: var(--primary-color);
+    cursor:pointer; /*Just changed*/
+    padding: 30px 56px 30px 56px;
     display: flex;
     gap: 60%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 50px 56px 50px 56px; */
 }
-.navkonam{
+.Logo{
     text-emphasis: initial;
     font-size: x-large;
     font-weight: 700;
@@ -23,58 +36,46 @@ nav ul{
     gap: 3rem;
 }
 nav ul li a {
-    width: 30%;
+    display: inline-block;
+    font-size: large;
     text-decoration: none ;
-    border-bottom: 2px solid black;
-    /* border-bottom: 2px  solid rgb(255, 255, 255) ; */
-    
-   
+    border-bottom: 3px solid var(--lighter-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 } 
 nav ul li a:hover{
-    border-bottom: 2px solid white;
-     width: 2%;
-    color: rgb(0, 0, 0);
-
+    transform: scale(1.2);
+    animation: hovering 500ms infinite ease alternate-reverse; 
+ }
+.container{
+    max-width: 1200px;
+    padding-left: 56px;
+    line-height: 2;
 }
-
-
 .nam {
+    display: inline-block;
     font-family: "Playwrite DE SAS", cursive;
- 
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.nam:hover {
+    transform: scale(1.01);
+    color: yellow;
+ }
+
+@keyframes hovering {
+    0%{
+        color: var(--secondary-color);
+        border-bottom: 3px solid var(--lighter-color);
+    }
+    100%{
+        color: var(--lighter-color);
+        border-bottom: 3px solid var(--secondary-color);
+    }
+    
 }
 
 
 
-/* 
-nav {
-    background-color: lightgreen;
-    width: 100%;
-    height:40px;
- 
-    display: flex;
-    color: aqua;
-    align-items: center;
-    justify-content: space-between;
-}
-ul{
-    color: aqua;
-    align-items: center;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 39px;
 
-}
-ul li{
-    color: rgb(255, 255, 255);
-
-}
-a{
-    color: aqua;
-    text-decoration: none;
-}
-
-#home{
-    color: aqua;
-} */
