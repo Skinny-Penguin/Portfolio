@@ -301,3 +301,12 @@ textarea {
   filter: drop-shadow(3px 20px 60px var(--hover-color));
   
 }
+.LastKoFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  padding: 3px 0em;
+}
